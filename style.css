@@ -7,13 +7,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Lato", sans-serif;
-    color: #1f4568;
+    color: #919599;
 }
 
 body {
-    /* background-image: url(""); */
+    /* background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png"); */
     overflow-x: hidden;
-    background-color: black;
+    background-color: #000;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,6 +42,7 @@ body {
 
 .sect--padding-bottom {
     padding-bottom: 115px;
+    background-color: #fff;
 }
 
 .sect--padding-top {
@@ -53,7 +54,7 @@ body {
 }
 
 .row--center {
-    max-width: 1000px;
+    max-width: 2000px;
     margin: 0 auto;
 }
 
@@ -62,11 +63,11 @@ body {
 }
 
 .row__title {
+    color: #23225c;
     text-align: center;
     font-size: 26px;
     font-weight: 400;
     margin-top: 0px;
-    color: #a6f3aa;
 }
 
 .row__sub {
@@ -82,9 +83,9 @@ body {
 }
 
 .price-box__wrap {
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 4px 8px 2px #000;
     /*0px 22px 20px -10px rgba(0, 0, 0,0.2)*/
     padding: 35px 35px 40px 35px;
     text-align: center;
@@ -95,42 +96,81 @@ body {
     -o-transition: all 0.4s;
 }
 
-.price-box__img {
-    display: inline-block;
+
+/* .price-box__img {
+  display: inline-block;
 }
 
 .price-box__img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
 
-.price-box--purple .price-box__img {
+.price-box--purple {
+    border-radius: 3px;
     background-image: url("./pexels-brett-sayles-2881229.jpg");
+    background-image: linear-gradient( 145deg, #030700 21%, rgba(0, 0, 0, 0.61) 98%), url("./pexels-brett-sayles-2881229.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    -o-background-clip: content-box;
 }
 
-.price-box--violet .price-box__img {
+.price-box--violet {
+    border-radius: 3px;
     background-image: url("./pexels-ksenia-chernaya-5767595.jpg");
+    background-image: linear-gradient( 145deg, #030700 21%, rgba(0, 0, 0, 0.61) 98%), url("./pexels-ksenia-chernaya-5767595.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    -o-background-clip: content-box;
 }
 
-.price-box--blue .price-box__img {
+.price-box--blue {
+    border-radius: 3px;
     background-image: url("./pexels-pixabay-257886.jpg");
+    background-image: linear-gradient( 145deg, #030700 21%, rgba(0, 0, 0, 0.61) 98%), url("./pexels-pixabay-257886.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    -o-background-clip: content-box;
 }
 
 .price-box__title {
     font-size: 22px;
     letter-spacing: 1px;
     margin-bottom: 4px;
+    color: #fff;
 }
 
 .price-box__people {
     font-size: 12px;
-    color: #8198ae;
+    color: #fff;
     font-weight: 300;
     letter-spacing: 1px;
+    color: #fff;
 }
 
 .price-box__discount {
@@ -138,6 +178,7 @@ body {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 0;
+    color: #fff;
 }
 
 .price-box__dollar {
@@ -145,6 +186,7 @@ body {
     font-weight: 400;
     vertical-align: top;
     margin-right: 4px;
+    color: #fff;
 }
 
 .price-box--purple .price-box__dollar {
@@ -168,7 +210,7 @@ body {
 .price-box__price {
     margin-top: 3px;
     font-size: 14px;
-    color: #8198ae;
+    color: #fff;
     letter-spacing: 1px;
     margin-bottom: 0;
     font-weight: 300;
@@ -215,8 +257,13 @@ body {
 
 .price-box__wrap:hover {
     backface-visibility: hidden;
-    transform: scale(1.01, 1.01);
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05, 1.05);
+    box-shadow: 3px 9px 15px 2px #000;
+    background-clip: content-box;
+    transition: transform 0.45s;
+    transition-property: transform;
+    transition-duration: 0.45s;
+    transition-timing-function: ease;
 }
 
 .btn {
@@ -224,7 +271,7 @@ body {
     border-radius: 20px;
     padding: 10px 25px;
     color: #fff;
-    box-shadow: 0px 18px 13px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px 0px #000;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
@@ -233,13 +280,8 @@ body {
 }
 
 .btn:hover {
-    box-shadow: 0px 25px 18px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 10px -8px #000;
     background-color: #58c45d;
-    color: #fff;
-}
-
-.price-box__wrap:hover .btn {
-    box-shadow: 0px 25px 18px -6px rgba(0, 0, 0, 0.2);
 }
 
 .btn--revert {
@@ -262,6 +304,7 @@ body {
 
 .btn--purple:hover {
     background-color: #21b139;
+    color: #fff;
 }
 
 .btn--violet {
@@ -270,6 +313,7 @@ body {
 
 .btn--violet:hover {
     background-color: #5dce63;
+    color: #fff;
 }
 
 .btn--blue {
@@ -278,6 +322,7 @@ body {
 
 .btn--blue:hover {
     background-color: #90d495;
+    color: #fff;
 }
 
 .btn--width {
@@ -511,13 +556,13 @@ body {
 }
 
 .header__title {
+    color: #fff;
     font-size: 15px;
     margin: 0;
     margin-left: 10px;
     display: inline-block;
     line-height: 18px;
     vertical-align: middle;
-    color: #fff;
 }
 
 .header__light {
@@ -806,7 +851,7 @@ body {
         width: 100%;
     }
     .header {
-        background-color: black;
+        background-color: #000;
         padding: 0;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         position: fixed;

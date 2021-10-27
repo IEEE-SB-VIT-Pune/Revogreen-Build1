@@ -9,6 +9,7 @@
     />
     <link rel="shortcut icon" type="image/png" href="./New RT/Asset 25.png" />
     <link rel="stylesheet" href="banner.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <meta name="theme-color" content="#3a9fff">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
     <link rel="stylesheet" href="./style.css">
@@ -36,7 +37,7 @@
         <header class="header">
             <div class="container header__container">
                 <div class="header__logo">
-                    <img class="header__img" src="./New RT/Asset 25.png" width="60">
+                    <img class="header__img" src="./New RT/Asset 25.png" width="70">
                     <h1 class="header__title">Revogreen<span class="header__light"> Technologies</span></h1>
                 </div>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -121,9 +122,10 @@ Building cost-effective, customised BMSs in India</h2>
   <h2 class="row__sub">What fits your business the best?</h2>
 </div>
 <div class="row row--center row--margin">
+  <div data-aos="fade-up"  data-aos-duration="1200">
   <div class="col-md-4 col-sm-4 price-box price-box--purple">
     <div class="price-box__wrap">
-      <div class="price-box__img"></div>
+      <!-- <div class="price-box__img"></div> -->
       <h1 class="price-box__title">
         BMS
       </h1>
@@ -149,65 +151,70 @@ Building cost-effective, customised BMSs in India</h2>
                     </div>
             </div>
         </div>
+        </div>
         <!-- second -->
-        <div class="col-md-4 col-sm-4 price-box price-box--violet">
-            <div class="price-box__wrap">
-                <div class="price-box__img"></div>
-                <h1 class="price-box__title">
-                    Battery Discharger
-                </h1>
-                <p class="price-box__people">
-                    <!-- 100 - 500 people -->
-                </p>
-                <h2 class="price-box__discount">
-                    <span class="price-box__dollar"><i class="fas fa-bolt"></i></span>
-                </h2>
-                <h3 class="price-box__price">
-                    <!-- $225/mo -->
-                </h3>
-                <p class="price-box__feat">
-                    Features
-                </p>
-                <ul class="price-box__list">
-                    <li class="price-box__list-el">Feature 1</li>
-                    <li class="price-box__list-el">Feature 2</li>
-                    <li class="price-box__list-el">Feature 3</li>
-                    <!-- <li class="price-box__list-el">No contractors limit </li> -->
-                </ul>
-                <div class="price-box__btn">
-                    <a class="btn btn--violet btn--width" href="https://ieee-sb-vit-pune.github.io/RevogreenProducts/">Explore</a>
+        <div data-aos="fade-up" data-aos-duration="1200">
+            <div class="col-md-4 col-sm-4 price-box price-box--violet">
+                <div class="price-box__wrap">
+                    <!-- <div class="price-box__img"></div> -->
+                    <h1 class="price-box__title">
+                        Battery Discharger
+                    </h1>
+                    <p class="price-box__people">
+                        <!-- 100 - 500 people -->
+                    </p>
+                    <h2 class="price-box__discount">
+                        <span class="price-box__dollar"><i class="fas fa-bolt"></i></span>
+                    </h2>
+                    <h3 class="price-box__price">
+                        <!-- $225/mo -->
+                    </h3>
+                    <p class="price-box__feat">
+                        Features
+                    </p>
+                    <ul class="price-box__list">
+                        <li class="price-box__list-el">Feature 1</li>
+                        <li class="price-box__list-el">Feature 2</li>
+                        <li class="price-box__list-el">Feature 3</li>
+                        <!-- <li class="price-box__list-el">No contractors limit </li> -->
+                    </ul>
+                    <div class="price-box__btn">
+                        <a class="btn btn--violet btn--width" href="https://ieee-sb-vit-pune.github.io/RevogreenProducts/">Explore</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- terzo -->
-        <div class="col-md-4 col-sm-4 price-box price-box--blue">
-            <div class="price-box__wrap">
-                <div class="price-box__img"></div>
-                <h1 class="price-box__title">
-                    BLDC Controller
-                </h1>
-                <p class="price-box__people">
-                    <!-- 500+ people -->
-                </p>
-                <h2 class="price-box__discount">
-                    <span class="price-box__dollar">
+        <div id="section-card-2" data-aos="fade-up" data-aos-duration="1200">
+            <div class="col-md-4 col-sm-4 price-box price-box--blue">
+                <div class="price-box__wrap">
+                    <!-- <div class="price-box__img"></div> -->
+                    <h1 class="price-box__title">
+                        BLDC Controller
+                    </h1>
+                    <p class="price-box__people">
+                        <!-- 500+ people -->
+                    </p>
+                    <h2 class="price-box__discount">
+                        <span class="price-box__dollar">
 <i class="fas fa-network-wired"></i></span>
-                </h2>
-                <!-- <h3 class="price-box__price">
+                    </h2>
+                    <!-- <h3 class="price-box__price">
         $499/mo
       </h3> -->
-                <p class="price-box__feat">
-                    Features
-                </p>
-                <ul class="price-box__list">
-                    <li class="price-box__list-el">Feature 1</li>
-                    <li class="price-box__list-el">Feature 2</li>
-                    <li class="price-box__list-el">Feature 3</li>
-                    <!-- <li class="price-box__list-el">No contractors limit </li> -->
-                </ul>
-                <div class="price-box__btn">
-                    <a class="btn btn--blue btn--width" href="https://ieee-sb-vit-pune.github.io/RevogreenProducts/">Explore</a>
+                    <p class="price-box__feat">
+                        Features
+                    </p>
+                    <ul class="price-box__list">
+                        <li class="price-box__list-el">Feature 1</li>
+                        <li class="price-box__list-el">Feature 2</li>
+                        <li class="price-box__list-el">Feature 3</li>
+                        <!-- <li class="price-box__list-el">No contractors limit </li> -->
+                    </ul>
+                    <div class="price-box__btn">
+                        <a class="btn btn--blue btn--width" href="https://ieee-sb-vit-pune.github.io/RevogreenProducts/">Explore</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -605,6 +612,10 @@ xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500"
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
