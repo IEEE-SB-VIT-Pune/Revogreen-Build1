@@ -1,156 +1,158 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500, 600,800&display=swap");
-
 .banner-container {
-  overflow-x: hidden;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://wallpaperaccess.com/full/85850.jpg);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(https://wallpaperaccess.com/full/85850.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
 }
 
 .banner-text {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 60px;
 }
 
-.banner-text > h1 {
-  font-size: 5vw;
-  font-weight: 900;
-}
-.blurred-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.blurred-banner > h2 {
-  font-weight: 500;
-  font-size: 2.2vw;
-}
-
-.blurred-banner > p {
-  font-size: 1.3vw;
+.banner-text>h1 {
+    font-size: 5vw;
+    font-weight: 900;
 }
 
 .blurred-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
 }
+
+.blurred-banner>h2 {
+    font-weight: 500;
+    font-size: 2.2vw;
+}
+
+.blurred-banner>p {
+    font-size: 1.3vw;
+}
+
+.blurred-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .blurred-banner {
-  background: #00000040;
-  max-width: 66.666%;
-  max-height: 50vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  border: 20px solid #ffffff40;
-  animation: blurredBanner 1s 2.8s ease-in-out forwards;
-  box-sizing: border-box;
-  filter: blur(10px);
-  opacity: 0;
+    background: #00000040;
+    max-width: 66.666%;
+    max-height: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 20px solid #ffffff40;
+    animation: blurredBanner 1s 2.8s ease-in-out forwards;
+    box-sizing: border-box;
+    filter: blur(10px);
+    opacity: 0;
 }
-.blurred-banner > * {
-  margin-left: 60px;
-  width: 22ch;
-  letter-spacing: 0.01rem;
+
+.blurred-banner>* {
+    margin-left: 60px;
+    width: 22ch;
+    letter-spacing: 0.01rem;
 }
 
 @supports (backdrop-filter: blur(10px)) {
-  .blurred-banner {
-    backdrop-filter: blur(0px);
-  }
+    .blurred-banner {
+        backdrop-filter: blur(0px);
+    }
 }
 
 .slide-down {
-  opacity: 0;
-  animation: slide-down 1s 1s ease-in-out forwards;
+    opacity: 0;
+    animation: slide-down 1s 1s ease-in-out forwards;
 }
 
 .reveal,
 .reveal-2 {
-  animation-name: text;
-  animation-delay: 1.8s;
-  animation-iteration-count: 1;
-  animation-duration: 800ms;
-  animation-fill-mode: both;
-  animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-name: text;
+    animation-delay: 1.8s;
+    animation-iteration-count: 1;
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
+
 .reveal-2 {
-  animation-delay: 2.2s;
+    animation-delay: 2.2s;
 }
 
 @keyframes slide-down {
-  to {
-    opacity: 1;
-    margin-top: 0px;
-  }
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
 }
 
 @keyframes text {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 @keyframes blurredBanner {
-  0% {
-    /* 		opacity: 0; */
-    /* 		backdrop-filter: blur(0); */
-  }
-  60% {
-    opacity: 1;
-    filter: blur(10px);
-  }
-  100% {
-    backdrop-filter: blur(10px);
-    filter: blur(0px);
-    opacity: 1;
-  }
+    0% {
+        /* 		opacity: 0; */
+        /* 		backdrop-filter: blur(0); */
+    }
+    60% {
+        opacity: 1;
+        filter: blur(10px);
+    }
+    100% {
+        backdrop-filter: blur(10px);
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 @keyframes slide-down-search {
-  to {
-    top: 0px;
-  }
+    to {
+        top: 0px;
+    }
 }
 
 @media (max-width: 800px) {
-  .banner-container {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .banner-text {
-    justify-content: center;
-    margin-left: 0;
-  }
-  .blurred-container {
-    justify-content: center;
-    margin-right: 0;
-  }
+    .banner-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .banner-text {
+        justify-content: center;
+        margin-left: 0;
+    }
+    .blurred-container {
+        justify-content: center;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 563px) {
-  .banner-text > h1 {
-    font-size: 40px;
-  }
-  .blurred-container {
-    justify-content: flex-start;
-  }
-  .blurred-banner > h2 {
-    font-size: 25px;
-  }
-  .blurred-banner > p {
-    font-size: 12px;
-  }
+    .banner-text>h1 {
+        font-size: 40px;
+    }
+    .blurred-container {
+        justify-content: flex-start;
+    }
+    .blurred-banner>h2 {
+        font-size: 25px;
+    }
+    .blurred-banner>p {
+        font-size: 12px;
+    }
 }
